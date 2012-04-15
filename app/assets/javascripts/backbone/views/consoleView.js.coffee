@@ -8,7 +8,7 @@ class Codebattle.Views.ConsoleView extends Backbone.View
     'click button#share': 'share'    
 
   render: ->
-    $(@el).html @template(@options.level)
+    $(@el).html @template(@options.level.toJSON())
     this
 
   execute: ->

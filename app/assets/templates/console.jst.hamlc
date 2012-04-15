@@ -1,16 +1,21 @@
-%h2 Level #{@get('level')}
-.level-description
-  = @get('description')
+%h2 Level #{@level}
+#level-description.alert.alert-info
+  = @description
 
-.hint
-  = @get('hint')
+#level-hint
+  = @hint
 
-%textarea#commands.well(rows="5" cols="20")
+
+%textarea#commands.well(rows="8")
   :plain<
     codezi.step 'left'
-%button#execute Execute
 
+.btns
+  %button#execute.btn.btn-info
+    %i.icon-cog.icon-white
+    Execute
+  %button#share.btn
+    %i.icon-share.icon-white
+    Share
 
-%button#share Share
-
-%input#shareURI(type="text" width="60")
+  %input#shareURI(type="text" width="60")
