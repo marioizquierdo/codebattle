@@ -8,7 +8,9 @@
 
 %textarea#commands.well(rows="8")
   :plain<
-    codezi.step 'right'
+  commands = ['down','right', 'down', 'down', 'right', 'right']
+
+  codezi.step direction for direction in commands
 
 .btns
   %button#execute.btn.btn-info
