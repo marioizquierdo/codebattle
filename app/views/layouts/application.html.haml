@@ -1,5 +1,6 @@
 !!! 5
 %html(lang="en")
+
   %head
     %meta(charset="utf-8")
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -31,12 +32,7 @@
 
       .content
         .row
-          .span6.main-screen
-            = yield
-
-          .span6.game-screen
-            .well
-              Game graphics here
+          = yield
 
       %footer
         %p &copy; Company 2012
