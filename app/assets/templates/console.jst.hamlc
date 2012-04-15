@@ -10,3 +10,8 @@
     moveRight()
 
 %button#execute Execute
+
+
+%button#share Share
+
+%input#shareURI(type="text" width="60")
