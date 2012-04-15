@@ -1,4 +1,2 @@
 rails:
   type: ruby
-  environment:
-    MODE: development
