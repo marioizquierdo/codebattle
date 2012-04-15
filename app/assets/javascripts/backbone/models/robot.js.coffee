@@ -13,16 +13,16 @@ class Codebattle.Models.Robot extends Backbone.Model
   step: (direction) ->
     # check for edge collision 
     switch direction
-      when "up" then @el.animate({top: '-=50'}, 500) unless @el.position().top < 0
-      when "down" then @el.animate({top: '+=50'}, 500) unless @el.position().top + @el.height > @canvas.height
-      when "left" then @el.animate({left: '-=50'}, 500) unless @el.position().left < 0
-      when "right" then @el.animate({left: '+=50'}, 500) unless @el.position().left + @el.width > @canvas.width
+      when "up" then @el = @el.animate({top: '-=50'}, 500) unless @el.position().top < 0
+      when "down" then @el = @el.animate({top: '+=50'}, 500) unless @el.position().top + @el.height > @canvas.height
+      when "left" then @el =  @el.animate({left: '-=50'}, 500) unless @el.position().left < 0
+      when "right" then @el =  @el.animate({left: '+=50'}, 500) unless @el.position().left + @el.width > @canvas.width
       else
         alert 'I will not jump out of the screen :-)'
 
   pick: (object) ->
     switch object
-      when 'flower' then $("#flower").hide()
+      when 'flower' then $("#flower").fadeOut(500)
 
   # clear: () ->
   #   canvas.ctx.clearRect(0, 0, canvas.el.width, canvas.el.height)

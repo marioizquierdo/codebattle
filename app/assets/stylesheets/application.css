@@ -43,6 +43,16 @@ button#execute {
   background-color: blue;
 }
 
+#flower {
+  width: 50px;
+  height: 50px;
+  left: 500px;
+  top: 150px;
+  position: relative;
+  background-color: red;
+}
+
+
 #level-hint {
   padding: 5px 16px 18px 24px;
   background: url('/assets/robothint.jpg') no-repeat left top;
