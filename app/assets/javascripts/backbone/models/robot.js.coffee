@@ -16,8 +16,8 @@ class Codebattle.Models.Robot extends Backbone.Model
       when "right" then @boxpos[0] += canvas.blocksize unless @boxpos[0] + canvas.blocksize*2 > canvas.el.width
       when "left" then @boxpos[0] -= canvas.blocksize unless @boxpos[0] - canvas.blocksize < 0
       else
-        alert 'Cannot jump out of the screen'
-      
+        alert 'I will not jump out of the screen :-)'
+
     @refresh()
 
   clear: () ->

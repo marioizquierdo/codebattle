@@ -7,7 +7,7 @@
 
 %textarea#commands.well(rows="5" cols="20")
   :plain<
-    Phil.step 'left'
+    codezi.step 'left'
 %button#execute Execute
 
 
