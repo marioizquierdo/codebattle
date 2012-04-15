@@ -15,9 +15,11 @@
 /* Hack some styles */
 
 #canvas {
-  background-color: #CC9966;
+  background: url('/assets/tilemap.jpg');
   width: 600px;
   height: 300px;
+  border-radius: 4px;
+  border: 1px solid black;
 }
 
 #commands {
