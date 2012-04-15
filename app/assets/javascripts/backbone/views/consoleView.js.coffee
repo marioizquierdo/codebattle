@@ -7,7 +7,7 @@ class Codebattle.Views.ConsoleView extends Backbone.View
     'click button#execute': 'execute'
 
   render: ->
-    $(@el).html @template(@options.level)
+    $(@el).html @template(@options.level.toJSON())
     this
 
   execute: ->

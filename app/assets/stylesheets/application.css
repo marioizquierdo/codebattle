@@ -11,8 +11,16 @@
  *= require_tree .
 */
 
+
+/* Hack some styles */
+
 #canvas {
   background-color: #CC9966;
   width: 500px;
   height: 300px;
+}
+
+#commands {
+  color: #6C6;
+  width: 370px;
 }

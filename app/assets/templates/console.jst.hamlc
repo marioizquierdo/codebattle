@@ -1,12 +1,17 @@
-%h2 Level #{@get('level')}
+%h2 Level #{@level}
 .level-description
-  = @get('description')
+  = @description
 
 .hint
-  = @get('hint')
+  = @hint
+
 
 %textarea#commands.well(rows="5" cols="20")
   :plain<
     moveRight()
 
-%button#execute Execute
+
+.btn-group
+  %button#execute.btn.btn-info
+    %i.icon-cog.icon-white
+    Execute
