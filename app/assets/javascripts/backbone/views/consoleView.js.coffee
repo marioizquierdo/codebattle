@@ -5,5 +5,4 @@ class Codebattle.Views.ConsoleView extends Backbone.View
 
   render: ->
     $(@el).html @template()
-    $('#main-screen').html(@el)
     this
