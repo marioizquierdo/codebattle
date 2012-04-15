@@ -1,6 +1,17 @@
 <h2>Playtest</h2> 
 <p>Tell the robot what to do below:</p>
 <textarea id="commands" rows="5" cols="20">
-</textarea>
+a=4
+b=5
+console.log a + b
+x=15
+left = 'left'
+
+go = (direction) ->
+    switch direction
+        when left then x += 1
+
+go left
+go left</textarea>
 
 <button type="button" id="play">Execute orders</button>
