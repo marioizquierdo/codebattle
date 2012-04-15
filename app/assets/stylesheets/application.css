@@ -40,7 +40,7 @@ button#execute {
   width: 50px;
   height: 50px;
   position: relative;
-  background-color: blue;
+  background: url('/assets/robot.png');
 }
 
 #flower {

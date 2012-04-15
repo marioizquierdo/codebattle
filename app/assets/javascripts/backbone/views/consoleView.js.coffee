@@ -5,7 +5,8 @@ class Codebattle.Views.ConsoleView extends Backbone.View
 
   events:
     'click button#execute': 'execute'
-    'click button#share': 'share'    
+    'click button#share': 'share'
+    'click #shareURI': 'selectShareUri'
 
   render: ->
     $(@el).html @template(@options.level.toJSON())
@@ -17,6 +18,13 @@ class Codebattle.Views.ConsoleView extends Backbone.View
     console.log "Result: #{@commandsResult}"
 
   share: ->
-    @code_URI = encodeURI(@$('textarea#commands').val())
-    console.log @$('#shareURI')
-    $('#shareURI').val(window.location.href + '?autoplay=true&code=' + @code_URI)
+    @commands = @$('textarea#commands').val()
+    codeURI = encodeURI(@commands)
+    href = window.location.host + '/game#' + codeURI
+    @$('#shareURI').val(href)
+
+  replaceCode: (code)->
+    @$('textarea#commands').val(code)
+
+  selectShareUri: ->
+    @$('#shareURI').select()

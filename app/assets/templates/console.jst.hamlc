@@ -1,4 +1,4 @@
-%h2 Level #{@level}
+%h2 Playground
 #level-description.alert.alert-info
   = @description
 
