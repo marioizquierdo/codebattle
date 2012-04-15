@@ -1,4 +1,4 @@
-%h2= @foo
+%h2 Playtest
 %p Tell the robot what to do below:
 %textarea(id="commands" rows="5" cols="20")
   :plain<

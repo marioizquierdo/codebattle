@@ -13,15 +13,19 @@
 #= require jquery
 #= require jquery_ujs
 #= require twitter/bootstrap
+#= require_tree ../templates
 #= require underscore
 #= require backbone
 #= require backbone_rails_sync
 #= require backbone_datalink
 #= require backbone/codebattle
 #= require hamlcoffee
-#= require_tree ../templates
 #= require_tree .
 
-window.renderedTemplate = JST['console'](foo: 'bar')
-$ ->
-  $('#main-screen').html(window.renderedTemplate)
+jQuery ($)->
+
+  # Initiate the router
+  Codebattle.Routers.router = new Codebattle.Routers.AppRouter
+
+  # Start Backbone history a neccesary step for bookmarkable URL's
+  Backbone.history.start()
