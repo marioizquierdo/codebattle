@@ -25,6 +25,12 @@
 
 jQuery ($)->
 
+  # Initialize canvas
+  canvas.draw()
+
+  # Create Robot Object
+  Codebattle.Models.robot = new Codebattle.Models.Robot
+
   # Initiate the router
   Codebattle.Routers.router = new Codebattle.Routers.AppRouter
 
