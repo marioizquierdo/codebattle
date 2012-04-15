@@ -2,17 +2,6 @@
 %p Tell the robot what to do below:
 %textarea(id="commands" rows="5" cols="20")
   :plain<
-    a=4
-    b=5
-    console.log a + b
-    x=15
-    left = 'left'
-
-    go = (direction) ->
-        switch direction
-            when left then x += 1
-
-    go left
-    go left
+    moveRight()
 
 %button(type="button" id="play") Execute orders

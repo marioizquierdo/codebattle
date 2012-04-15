@@ -20,6 +20,7 @@
 #= require backbone_datalink
 #= require backbone/codebattle
 #= require hamlcoffee
+#= require coffee-script
 #= require_tree .
 
 jQuery ($)->
