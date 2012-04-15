@@ -8,5 +8,10 @@ class Codebattle.Routers.AppRouter extends Backbone.Router
     @view = new Codebattle.Views.ConsoleView level: Codebattle.Models.campaign.get('levels')[0]
     $('#main-screen').html(@view.render().el)
 
+    if location.hash
+      codeURI = location.hash.substring(1)
+      code = decodeURI codeURI
+      @view.replaceCode code
+
 
 
