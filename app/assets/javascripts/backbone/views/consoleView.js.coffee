@@ -15,7 +15,7 @@ class Codebattle.Views.ConsoleView extends Backbone.View
     @commands = @$('textarea#commands').val()
     @commandsResult = CoffeeScript.run @commands
     console.log "Result: #{@commandsResult}"
-  
+
   share: ->
     @code_URI = encodeURI(@$('textarea#commands').val())
     console.log @$('#shareURI')
