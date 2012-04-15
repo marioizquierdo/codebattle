@@ -1,7 +1,12 @@
-%h2 Playtest
-%p Tell the robot what to do below:
-%textarea(id="commands" rows="5" cols="20")
+%h2 Level #{@get('level')}
+.level-description
+  = @get('description')
+
+.hint
+  = @get('hint')
+
+%textarea#commands(rows="5" cols="20")
   :plain<
     moveRight()
 
-%button(type="button" id="play") Execute orders
+%button#execute Execute
