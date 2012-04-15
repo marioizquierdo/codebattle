@@ -38,7 +38,7 @@ window.canvas =
     @draw()
 
 window.robot =
-  move: (direction) ->
+  step: (direction) ->
     canvas_el = document.getElementById('canvas')
     ctx = canvas_el.getContext('2d')
     ctx.clearRect(0,0,canvas_el.width,canvas_el.height)
