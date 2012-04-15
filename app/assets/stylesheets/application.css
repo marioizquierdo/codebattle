@@ -15,10 +15,16 @@
 /* Hack some styles */
 
 #canvas {
+<<<<<<< HEAD
   background-color: #CC9966;
   position: absolute;  
+=======
+  background: url('/assets/tilemap.jpg');
+>>>>>>> 3427367a42ea5cb2e3f0ba405179cfbc9457c682
   width: 600px;
   height: 300px;
+  border-radius: 4px;
+  border: 1px solid black;
 }
 
 #commands {
