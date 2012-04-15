@@ -4,10 +4,10 @@ class Codebattle.Views.ConsoleView extends Backbone.View
   template: JST['console']
 
   events:
-    'click button#play': 'execute'
+    'click button#execute': 'execute'
 
   render: ->
-    $(@el).html @template()
+    $(@el).html @template(@options.level)
     this
 
   execute: ->
