@@ -8,7 +8,7 @@
 
 %textarea#commands.well(rows="8")
   :plain<
-    codezi.step 'left'
+    codezi.step 'right'
 
 .btns
   %button#execute.btn.btn-info

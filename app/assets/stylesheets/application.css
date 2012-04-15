@@ -16,6 +16,7 @@
 
 #canvas {
   background-color: #CC9966;
+  position: absolute;  
   width: 600px;
   height: 300px;
 }
@@ -31,6 +32,13 @@ button#execute {
 
 #level-description {
 
+}
+
+#robot {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: blue;
 }
 
 #level-hint {

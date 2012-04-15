@@ -26,7 +26,7 @@
 jQuery ($)->
 
   # Initialize canvas
-  canvas.draw()
+  # canvas.draw()
 
   # Create Robot Object
   Codebattle.Models.robot = new Codebattle.Models.Robot
