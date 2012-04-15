@@ -16,11 +16,24 @@
 
 #canvas {
   background-color: #CC9966;
-  width: 500px;
+  width: 600px;
   height: 300px;
 }
 
 #commands {
   color: #6C6;
-  width: 370px;
+  width: 430px;
+}
+
+button#execute {
+  float: right;
+}
+
+#level-description {
+
+}
+
+#level-hint {
+  padding: 5px 16px 18px 24px;
+  background: url('/assets/robothint.jpg') no-repeat left top;
 }

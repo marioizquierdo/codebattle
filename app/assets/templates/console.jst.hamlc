@@ -1,12 +1,12 @@
 %h2 Level #{@level}
-.level-description
+#level-description.alert.alert-info
   = @description
 
-.hint
+#level-hint
   = @hint
 
 
-%textarea#commands.well(rows="5" cols="20")
+%textarea#commands.well(rows="8")
   :plain<
     moveRight()
 
