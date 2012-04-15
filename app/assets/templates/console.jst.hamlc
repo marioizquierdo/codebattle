@@ -7,8 +7,7 @@
 
 %textarea#commands.well(rows="5" cols="20")
   :plain<
-    moveRight()
-
+    Phil.step 'left'
 %button#execute Execute
 
 
