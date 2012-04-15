@@ -5,7 +5,7 @@
 .hint
   = @get('hint')
 
-%textarea#commands(rows="5" cols="20")
+%textarea#commands.well(rows="5" cols="20")
   :plain<
     moveRight()
 
