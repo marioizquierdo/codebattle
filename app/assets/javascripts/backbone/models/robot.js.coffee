@@ -9,11 +9,15 @@ class Codebattle.Models.Robot extends Backbone.Model
     # update robot position
     # redraw the canvas
     
+    # check for edge collision 
     switch direction
-      when "up" then @boxpos[1] -=  canvas.blocksize
-      when "down" then @boxpos[1] += canvas.blocksize
-      when "right" then @boxpos[0] += canvas.blocksize
-      when "left" then @boxpos[0] -= canvas.blocksize
+      when "up" then @boxpos[1] -= canvas.blocksize unless @boxpos[1] - canvas.blocksize < 0
+      when "down" then @boxpos[1] += canvas.blocksize unless @boxpos[1] + canvas.blocksize*2 > canvas.el.height
+      when "right" then @boxpos[0] += canvas.blocksize unless @boxpos[0] + canvas.blocksize*2 > canvas.el.width
+      when "left" then @boxpos[0] -= canvas.blocksize unless @boxpos[0] - canvas.blocksize < 0
+      else
+        alert 'I will not jump out of the screen :-)'
+
     @refresh()
 
   clear: () ->

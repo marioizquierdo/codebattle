@@ -30,7 +30,7 @@ jQuery ($)->
 
   # Create Robot Object
   Codebattle.Models.robot = new Codebattle.Models.Robot
-  window.Phil = Codebattle.Models.robot
+  window.codezi = Codebattle.Models.robot
 
   # Initiate the router
   Codebattle.Routers.router = new Codebattle.Routers.AppRouter

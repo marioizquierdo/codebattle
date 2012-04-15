@@ -8,13 +8,12 @@
 
 %textarea#commands.well(rows="8")
   :plain<
-    moveRight()
+    codezi.step 'left'
 
 .btns
   %button#execute.btn.btn-info
     %i.icon-cog.icon-white
     Execute
-
   %button#share.btn
     %i.icon-share.icon-white
     Share
