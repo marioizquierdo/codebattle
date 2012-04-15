@@ -10,8 +10,13 @@
   :plain<
     moveRight()
 
-
-.btn-group
+.btns
   %button#execute.btn.btn-info
     %i.icon-cog.icon-white
     Execute
+
+  %button#share.btn
+    %i.icon-share.icon-white
+    Share
+
+  %input#shareURI(type="text" width="60")
