@@ -9,7 +9,6 @@ class Codebattle.Models.Robot extends Backbone.Model
     @canvas = $("#canvas")
 
 
-
   step: (direction) ->
     # check for edge collision 
     switch direction

@@ -8,6 +8,10 @@
 
 %textarea#commands.well(rows="8")
   :plain<
+  # Commands: 
+  # codezi.step 'up'/'down'/'left'/'right'
+  # codezi.pick 'flower'
+  
   commands = ['down','right', 'down', 'down']
   codezi.step direction for direction in commands
 
